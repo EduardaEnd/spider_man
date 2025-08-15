@@ -1,0 +1,21 @@
+header{
+    background-color: rgba(0, 0, 0, 0.329);
+    display: flex;
+    justify-content: center;
+}
+
+nav{
+    display: flex;
+    position: relative;
+    padding: 10%;
+    gap: 50%;
+    margin-left: -50%;
+    
+}
+
+nav > a{
+    position: relative;
+    z-index: 1;
+    color: aliceblue;
+    text-decoration: none;
+}

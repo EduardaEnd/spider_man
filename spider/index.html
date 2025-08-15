@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spider Man</title>
+    <link rel="stylesheet" href="styles/geral.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="background">
+      <img src="/assets/download (16).jpg" alt="" />
+    </div>
+
+    <header>
+      <div class="header_">
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">Category</a>
+          <a href="#">History</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="geral">
+        <div class="lateral1">
+          <!--imagens clicaveis que direcinam para outra imagem de fundo-->
+
+          <img
+            src="/assets/download (16).jpg"
+            alt="homem aranha e gwen"
+            onclick=""
+            class="imagens_button"
+            class="botao_clicado"
+          />
+          <img
+            src="/assets/Classic Spider-Man Look.jpg"
+            alt="homem aranha tom holland"
+            onclick=""
+            class="imagens_button"
+          />
+          <img
+            src="/assets/Epic Spider-Man and Spider-Woman Poster.jpg"
+            alt="desenho do homem aranha"
+            onclick=""
+            class="imagens_button"
+          />
+        </div>
+
+        <div class="centro">
+          <!--escrita-->
+          <h1>SPIDER</h1>
+          <h2>MAN</h2>
+
+          <!--botoes-->
+          <div class="botoes">
+            <button id="button1">
+              <a href="#">ASSISTIR</a>
+            </button>
+
+            <button id="button2"
+             data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-easing="ease-in-out">
+              <a href="#">HISTÓRIA</a>
+            </button>
+          </div>
+        </div>
+
+        <div class="lateral2">
+          <!--escritas laterais-->
+          <article>
+            <p>Com grandes poderes, vem grandes responsabilidades</p>
+          </article>
+
+          <article>
+            <p>O que te faz Ficar?</p>
+          </article>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+  </script>
+  </body>
+</html>
