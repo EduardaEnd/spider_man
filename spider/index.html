@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spider Man</title>
     <link rel="stylesheet" href="styles/geral.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=keyboard_double_arrow_down"
+    />
   </head>
   <body>
-    <div id="background">
+    <div id="background" > 
       <img src="/assets/download (16).jpg" alt="" />
     </div>
 
@@ -24,7 +28,7 @@
 
     <main>
       <div class="geral">
-        <div class="lateral1">
+        <div class="lateral1" data-aos="fade-up" data-aos-duration="2500">
           <!--imagens clicaveis que direcinam para outra imagem de fundo-->
 
           <img
@@ -50,31 +54,70 @@
 
         <div class="centro">
           <!--escrita-->
-          <h1>SPIDER</h1>
-          <h2>MAN</h2>
+          <div
+            class="escrita"
+            data-aos="zoom-in-up"
+            data-aos-delay="200"
+            data-aos-duration="800"
+          >
+            <h1>SPIDER</h1>
+            <h2>MAN</h2>
+          </div>
 
           <!--botoes-->
-          <div class="botoes">
-            <button id="button1">
-              <a href="#">ASSISTIR</a>
-            </button>
+          <section class="botoes">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="200"
+              data-aos-duration="800"
+              data-aos-easing="ease"
+              data-aos-once="true"
+              id="button1"
+            >
+              <button>
+                <a href="#">ASSISTIR</a>
+              </button>
+            </div>
 
-            <button id="button2"
-             data-aos="fade-up"
-            data-aos-duration="800"
-            data-aos-easing="ease-in-out">
-              <a href="#">HISTÓRIA</a>
-            </button>
+            <div
+              data-aos="fade-up"
+              data-aos-delay="600"
+              data-aos-duration="800"
+              data-aos-easing="ease"
+              data-aos-once="true"
+              id="button2"
+            >
+              <button>
+                <a href="#">HISTÓRIA</a>
+              </button>
+            </div>
+          </section>
+
+          <div class="puxe">
+            <img
+              src="/assets/keyboard_double_arrow_down_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"
+            />
           </div>
         </div>
 
-        <div class="lateral2">
+        <div
+          class="lateral2"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
           <!--escritas laterais-->
-          <article>
-            <p>Com grandes poderes, vem grandes responsabilidades</p>
+          <article id="escrita1" data-aos="fade-down-left">
+            <p>Com grandes poderes</p>
+            <p>, vem grandes</p>
+            <p>responsabilidades</p>
           </article>
 
-          <article>
+          <article
+            id="escrita2"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+          >
             <p>O que te faz Ficar?</p>
           </article>
         </div>
@@ -83,7 +126,7 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-    AOS.init();
-  </script>
+      AOS.init();
+    </script>
   </body>
 </html>
