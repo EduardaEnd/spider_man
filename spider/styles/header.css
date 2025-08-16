@@ -20,3 +20,22 @@ nav > a{
     color: aliceblue;
     text-decoration: none;
 }
+
+nav > a::after{
+    content: "";
+    position: absolute;
+    width: 80%;
+    margin-left: 8%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: aliceblue;
+    transform-origin: bottom right;
+    transition:  transform .6s ease-out;
+}
+
+nav a:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
