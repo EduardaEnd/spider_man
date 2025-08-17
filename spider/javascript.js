@@ -25,10 +25,11 @@ function trocarPagina(pagina) {
   } 
   else if (pagina === "pagina3") {
     fundo.src = "/assets/pagina3.jpg";
-    button1.style.borderColor = "#CE1123";
-    letra_botao.style.color = "#CE1123";
-    palavra.textContent = 'Confiar';
-    man.style.webkitTextStroke = "1px #f0f8ff";
+    button1.style.borderColor = "#f0f8ffbb";
+    letra_botao.style.color = "#f0f8ffe0";
+    palavra.textContent = 'Sonhar?';
+    man.style.webkitTextStroke = "2px #000000ff";
+    man.style.color = '#f0f8ff70'
   }
 
     fundo.style.opacity = 1;
