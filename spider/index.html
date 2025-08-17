@@ -13,7 +13,7 @@
   </head>
   <body>
     <div id="background" > 
-      <img src="/assets/download (16).jpg" alt="" />
+      <img id="imagem_fundo" src="/assets/imagem1.jpg" alt="" />
     </div>
 
     <header>
@@ -32,23 +32,23 @@
           <!--imagens clicaveis que direcinam para outra imagem de fundo-->
 
           <img
-            src="/assets/download (16).jpg"
+            src="/assets/imagem1.jpg"
             alt="homem aranha e gwen"
-            onclick="trocarPagina"
-            class="imagens_button"
+            onclick="trocarPagina('pagina1')"
+            id="pag1"
           
           />
           <img
-            src="/assets/Classic Spider-Man Look.jpg"
+            src="/assets/pagina2.jpg"
             alt="homem aranha tom holland"
-            onclick="trocarPagina"
-            class="imagens_button"
+            onclick="trocarPagina('pagina2')"
+            id="pag2"
           />
           <img
-            src="/assets/Epic Spider-Man and Spider-Woman Poster.jpg"
+            src="/assets/pagina3.jpg"
             alt="desenho do homem aranha"
-            onclick="trocarPagina"
-            class="imagens_button"
+            onclick="trocarPagina('pagina3')"
+            id="pag3"
           />
         </div>
 
@@ -61,7 +61,7 @@
             data-aos-duration="800"
           >
             <h1>SPIDER</h1>
-            <h2>MAN</h2>
+            <h2 id="man">MAN</h2>
           </div>
 
           <!--botoes-->
@@ -118,7 +118,7 @@
             data-aos="fade-up"
             data-aos-anchor-placement="center-bottom"
           >
-            <p>O que te faz </p> <span></span>
+            <p>O que te faz </p> <span id="palavra">Ficar</span>
           </article>
         </div>
       </div>

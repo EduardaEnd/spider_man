@@ -17,7 +17,7 @@ nav{
 nav > a{
     position: relative;
     z-index: 1;
-    color: aliceblue;
+    color: var(--branco);
     text-decoration: none;
 }
 
@@ -30,7 +30,7 @@ nav > a::after{
     height: 2px;
     bottom: -5px;
     left: 0;
-    background-color: aliceblue;
+    background-color: var(--branco);
     transform-origin: bottom right;
     transition:  transform .6s ease-out;
 }
