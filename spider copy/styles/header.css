@@ -1,0 +1,49 @@
+header{
+    background-color: rgba(0, 0, 0, 0.329);
+    display: flex;
+    justify-content: center;
+}
+
+nav{
+    display: flex;
+    position: relative;
+    padding: 10%;
+    gap: 50%;
+    margin-left: -50%;
+    font-size: 1.2em;
+    
+}
+
+nav > a{
+    position: relative;
+    z-index: 1;
+    color: var(--branco);
+    text-decoration: none;
+    opacity: .8;
+    transition: all .5s;
+}
+
+nav > a:hover{
+    transform: scale(1.1);
+    transform: translateY(-5px);
+    opacity: 1;
+}
+
+nav > a::after{
+    content: "";
+    position: absolute;
+    width: 80%;
+    margin-left: 8%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--branco);
+    transform-origin: bottom right;
+    transition:  transform .6s ease-out;
+}
+
+nav a:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}

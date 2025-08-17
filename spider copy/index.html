@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spider Man</title>
+    <link rel="stylesheet" href="styles/geral.css" />
+    <link rel="stylesheet" href="styles/computador.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=keyboard_double_arrow_down"
+    />
+  </head>
+  <body>
+    <div id="background" > 
+      <img id="imagem_fundo" src="/assets/imagem1.jpg" alt="" />
+    </div>
+
+    <header>
+      <div class="header_">
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">Category</a>
+          <a href="#">History</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="secoes">
+        <article>
+          <div class="geral">
+            <div class="lateral1" data-aos="fade-up" data-aos-duration="2500">
+              <!--imagens clicaveis que direcinam para outra imagem de fundo-->
+              <img
+                src="/assets/imagem1.jpg"
+                alt="homem aranha e gwen"
+                onclick="trocarPagina('pagina1')"
+                id="pag1"
+          
+              />
+              <img
+                src="/assets/pagina2.jpg"
+                alt="homem aranha tom holland"
+                onclick="trocarPagina('pagina2')"
+                id="pag2"
+              />
+              <img
+                src="/assets/pagina3.jpg"
+                alt="desenho do homem aranha"
+                onclick="trocarPagina('pagina3')"
+                id="pag3"
+              />
+            </div>
+            <div class="centro">
+              <!--escrita-->
+              <div
+                class="escrita"
+                data-aos="zoom-in-up"
+                data-aos-delay="200"
+                data-aos-duration="800"
+              >
+                <h1>SPIDER</h1>
+                <h2 id="man">MAN</h2>
+              </div>
+              <!--botoes-->
+              <section class="botoes">
+                <div
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                  data-aos-duration="800"
+                  data-aos-easing="ease"
+                  data-aos-once="true"
+                  id="button1"
+                >
+                  <button id="button1">
+                    <a href="#">ASSISTIR</a>
+                  </button>
+                </div>
+                <div
+                  data-aos="fade-up"
+                  data-aos-delay="600"
+                  data-aos-duration="800"
+                  data-aos-easing="ease"
+                  data-aos-once="true"
+                  id="button2"
+                >
+                  <button id="button2">
+                    <a href="#">HISTÓRIA</a>
+                  </button>
+                </div>
+              </section>
+              <div class="puxe">
+                <img
+                  src="/assets/keyboard_double_arrow_down_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"
+                />
+              </div>
+            </div>
+            <div
+              class="lateral2"
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
+            >
+              <!--escritas laterais-->
+              <article id="escrita1" data-aos="fade-down-left">
+                <p>Com grandes poderes,</p>
+                <p> vem grandes</p>
+                <p>responsabilidades</p>
+              </article>
+              <article
+                id="escrita2"
+                data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom"
+              >
+                <p id="frase_efeito">O que te faz </p> <span id="palavra">Ficar</span>
+              </article>
+            </div>
+          </div>
+        </article>
+
+
+
+        <article>
+          <div class="secao2"></div>
+        </article>
+
+      </section>
+    </main>
+
+    <script src="javascript.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

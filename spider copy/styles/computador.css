@@ -1,0 +1,13 @@
+@media screen and (max-width: 1370px){
+    .lateral2 p, span{
+    color: var(--branco);
+    font-size: 1.1em;
+    margin-right: 7%;
+    position: relative;
+}
+
+#frase_efeito{
+    margin-right: -.4%;
+}
+
+}
