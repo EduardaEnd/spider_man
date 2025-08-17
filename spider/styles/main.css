@@ -94,7 +94,7 @@
 
 
     transform: skew(-10deg);
-    transition: all .3s;
+    transition: all .6s;
 }
 
 #button1 > button:hover{
@@ -122,7 +122,7 @@
     cursor: pointer;
 
     transform: skew(-10deg);
-    transition: all .3s;
+    transition: all .6s;
 }
 
 #button2 > button:hover{
@@ -149,10 +149,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 14%;
+    gap: 26%;
     height: 91.8vh;
     width: 33vh;
     object-fit: cover;
+}
+
+.lateral2 p{
+    line-height: 28px;
 }
 
 .lateral2 p, span{
