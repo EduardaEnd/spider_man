@@ -31,7 +31,7 @@ function trocarPagina(pagina) {
     letra_botao.style.color = "#f0f8ffe0";
     palavra.textContent = 'Sonhar?';
     man.style.webkitTextStroke = "2px #000000ff";
-    man.style.color = '#f0f8ff70'
+    man.style.color = '#ce11243b'
   }
 
     fundo.style.opacity = 1;
