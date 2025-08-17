@@ -12,8 +12,9 @@ function trocarPagina(pagina) {
     fundo.src = "/assets/imagem1.jpg";
     button1.style.borderColor = "#CE1123";
     letra_botao.style.color = "#CE1123";
-    palavra.textContent = 'Ficar';
+    palavra.textContent = 'Ficar?';
     man.style.webkitTextStroke = "2px #000000ff";
+    man.style.color = '#f0f8ff09'
 
   } 
   else if (pagina === "pagina2") {
@@ -22,6 +23,7 @@ function trocarPagina(pagina) {
     letra_botao.style.color = "#000000ff";
     palavra.textContent = 'Lutar?';
     man.style.webkitTextStroke = "2px #000000ff";
+    man.style.color = '#f0f8ff09'
   } 
   else if (pagina === "pagina3") {
     fundo.src = "/assets/pagina3.jpg";
